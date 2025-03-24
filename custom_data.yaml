@@ -1,0 +1,8 @@
+path: ./ # root path
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: plastic-cup
+  1: tree
