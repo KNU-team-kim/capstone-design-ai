@@ -1,7 +1,7 @@
 import os
 import shutil
 
-def clean_box_data(labels_dir='box-labels', images_dir='box-images'):
+def clean_box_data(labels_dir='labels', images_dir='images'):
     """
     box-labels 디렉토리 내의 txt 파일들을 검사하여 조건에 맞지 않는 파일과
     해당 파일과 동일한 이름의 이미지 파일을 삭제합니다.
@@ -75,11 +75,11 @@ def clean_box_data(labels_dir='box-labels', images_dir='box-images'):
 
 if __name__ == "__main__":
     # 디렉토리가 존재하는지 확인
-    if not os.path.exists('box-labels'):
+    if not os.path.exists('labels'):
         print("box-labels 디렉토리가 존재하지 않습니다.")
         exit(1)
         
-    if not os.path.exists('box-images'):
+    if not os.path.exists('images'):
         print("box-images 디렉토리가 존재하지 않습니다.")
         exit(1)
     
