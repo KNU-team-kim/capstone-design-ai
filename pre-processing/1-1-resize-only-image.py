@@ -59,5 +59,5 @@ def process_images(src_folder):
 
 # 사용 예시:
 if __name__ == "__main__":
-    source_folder = "before-converted"  # << 폴더 이름을 지정하세요.
+    source_folder = "cups"  # << 폴더 이름을 지정하세요.
     process_images(source_folder)
